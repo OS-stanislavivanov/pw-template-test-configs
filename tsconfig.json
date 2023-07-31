@@ -1,0 +1,48 @@
+{
+  "compilerOptions": {
+    // "module" specifies the module code generation method: commonjs, amd, system, umd, es6, es2015, es2020, esnext.
+    "module": "commonjs",
+
+    // "target" sets the JavaScript language version for emitted JavaScript and include compatible library declarations.
+    "target": "es2022",
+
+    // "moduleResolution" specifies module resolution strategy: 'node' (Node.js) or 'classic' (used in TypeScript 1.5 and earlier).
+    "moduleResolution": "node",
+
+    // "allowSyntheticDefaultImports" allows default imports from modules with no default export. This does not affect code emit, just type checking.
+    "allowSyntheticDefaultImports": true,
+
+    // "sourceMap" controls the generation of corresponding '.map' file.
+    "sourceMap": false,
+
+    // "allowUnusedLabels" is used to report errors on unused labels.
+    "allowUnusedLabels": false,
+
+    // "noFallthroughCasesInSwitch" reports errors for fallthrough cases in switch statements.
+    "noFallthroughCasesInSwitch": true,
+
+    // "noUnusedLocals" reports errors on unused locals.
+    "noUnusedLocals": true,
+
+    // "baseUrl" is used to specify the base directory to resolve non-relative module names.
+    "baseUrl": "./",
+
+    // "rootDir" specifies the root directory of your source files. Use to control the output directory structure with --outDir.
+    "rootDir": ".",
+
+    // "resolveJsonModule" allows importing .json files.
+    "resolveJsonModule": true,
+
+    // "explainFiles" logs out files read during the compilation.
+    "explainFiles": true,
+
+    // "pretty" stylizes errors and messages using color and context (experimental).
+    "pretty": true,
+
+    // "esModuleInterop" allows default imports from modules with no default export. This does not affect code emit, just type checking.
+    "esModuleInterop": true
+  },
+
+  // "exclude" is used to exclude certain files from the compilation process.
+  "exclude": ["node_modules"]
+}

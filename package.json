@@ -1,0 +1,33 @@
+{
+  "name": "pw-template-test-configs",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "postinstall": "npx playwright install chromium",
+    "reinstall": "npm run clean_results && npm run clean && npm install",
+    "test": "npx playwright test",
+    "clean": "rimraf ./node_modules/",
+    "clean_results": "rimraf ./playwright-report/",
+    "report": "npx playwright show-report ./playwright-report/html",
+    "vscode-debug": "npx playwright test --config ./playwright.config.ts",
+    "lint": "eslint ./ --format stylish",
+    "prettify": "npx prettier --write ./ && npx eslint ./ --format stylish --fix && git status"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@playwright/test": "^1.36.2",
+    "rimraf": "^5.0.1",
+    "@typescript-eslint/eslint-plugin": "^5.60.1",
+    "@typescript-eslint/parser": "^5.60.1",
+    "eslint": "^8.41.0",
+    "eslint-config-prettier": "^8.8.0",
+    "eslint-plugin-prettier": "^5.0.0",
+    "eslint-plugin-import": "^2.27.5",
+    "eslint-plugin-playwright": "^0.15.2",
+    "ts-node": "^10.9.1",
+    "typescript": "5.1.5"
+  }
+}
